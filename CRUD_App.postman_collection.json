@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "5d58e238-96bf-4eb7-995d-7f37beba3b28",
+		"name": "CRUD_App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28872303"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"krishnarathod\",\r\n    \"email\":\"itskrihna@gmail.com\",\r\n    \"age\":25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/createUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\":\"krishna rathod\",\r\n    \"email\":\"itskrihna@gmail.com\",\r\n    \"age\":25\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/updateUser/655af4f9e8e8b1740c2926bd",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"updateUser",
+						"655af4f9e8e8b1740c2926bd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/deleteUser/655af4170b0d9e9ec1ad6745",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"deleteUser",
+						"655af4170b0d9e9ec1ad6745"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
